@@ -25,13 +25,15 @@ main {
 main .side-bar {
     width: 150px;
     margin-right: 30px;
+    margin-top: 20px;
     position: fixed;
+
 }
 
 main .mainContent {
     position: absolute;
     left: 160px;
-    top: 0;
+    top: 20px;
     width: calc(100% - 160px);
 }
 
