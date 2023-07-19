@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* :root {
+    --dark-color-1 : #101011;
+    --dark-color-2 : #222225;
+    --dark-color-3 : #43434b;
+    --dark-color-4 : #7b7b89;
+    --dark-text-color: #dfdfdf;
+    --main-border-radius: 10px
+} */
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+input:focus {
+    outline: none;
+}
+
+.hiden {
+    display: none;
+}
+
+body {
+    /* background-color: var(--dark-color-1);
+    color: var(--dark-text-color); */
+    font-family: 'Cairo', sans-serif;
+    padding: 10px
+}

@@ -1,0 +1,22 @@
+.loaderContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loader {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid;
+    border-top-color: transparent;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}
+@keyframes load {
+    to {
+        transform: rotateZ(360deg);
+    }
+}

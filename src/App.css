@@ -1,0 +1,58 @@
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #c6c6d7 ;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #787878;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid #c6c6d7;  /* creates padding around scroll thumb */
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+main {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+
+main .side-bar {
+    width: 150px;
+    margin-right: 30px;
+    position: fixed;
+}
+
+main .mainContent {
+    position: absolute;
+    left: 160px;
+    top: 0;
+    width: calc(100% - 160px);
+}
+
+@media (min-width: 721px) {
+    .side-bar {
+         display: block !important;
+    }
+}
+
+@media (max-width: 720px) {
+    main .mainContent {
+        left: 0;
+        width: 100%;
+        z-index: -9;
+    }
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+}
