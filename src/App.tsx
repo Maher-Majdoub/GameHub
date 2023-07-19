@@ -6,6 +6,7 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import { GameProps } from "./interfaces";
 import DisplayMoreButton from "./assets/components/displayMoreButton/DisplayMoreButton";
+import { AxiosError, AxiosResponse } from "axios";
 
 async function getGames(
   parent_platforms: number,
@@ -61,10 +62,10 @@ function App() {
   useEffect(() => {
     const { request, cancel } = apiService.getAllGenres();
     request
-      .then((res) => {
+      .then((res: AxiosResponse) => {
         setGenres(res.data.results);
       })
-      .catch((err) => {
+      .catch((err: AxiosError) => {
         if (err instanceof CanceledError) return;
         console.log(err.message);
       });
