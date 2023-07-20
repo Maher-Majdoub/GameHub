@@ -2,7 +2,6 @@
     width: 100%;
     height: minmax(fit-content, 100%);
     border-radius: 10px;
-    /* background-color: var(--dark-color-2); */
     transition: .3s;
 }
 .image {
@@ -62,7 +61,7 @@
 }
 .gameInfos.hovered {
     display: block;
-    transform: translateY(calc(100% - 15px));
+    transform: translateY(calc(100% - 9px));
 }
 .gameInfo {
     display: flex;
