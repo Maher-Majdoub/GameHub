@@ -117,11 +117,15 @@ const Game = ({
             </div>
             <div className={styles.gameInfo} style={{ borderColor: colors[3] }}>
               <span style={{ color: colors[3] }}>Rating: </span>
-              <span style={{ color: colors[4] }}>{rating + " / 5"}</span>
+              <span style={{ color: colors[4] }}>
+                {rating.toString() + " / 5"}
+              </span>
             </div>
             <div className={styles.gameInfo}>
               <span style={{ color: colors[3] }}>Play Time: </span>
-              <span style={{ color: colors[4] }}>{playtime + " hours"}</span>
+              <span style={{ color: colors[4] }}>
+                {playtime.toString() + " hours"}
+              </span>
             </div>
 
             <div className={styles.actions}>
