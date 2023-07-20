@@ -48,7 +48,7 @@ const Header = ({
             onInputChange(inputField.current ? inputField.current.value : "");
           }}
           onKeyDown={(key) => {
-            if (key.code === "Enter") {
+            if (key.code === "Enter" || key.code === "Search") {
               onSearch(inputField.current ? inputField.current.value : "");
               if (inputField.current) inputField.current.value = "";
               onInputChange("");
