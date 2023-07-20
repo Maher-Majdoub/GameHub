@@ -77,7 +77,7 @@ function App() {
     updateGames([], setGames, parent_platforms, ordering, genre, search);
   }, []);
 
-  const [sideBarVisible, setSideBarVisible] = useState(true);
+  const [sideBarVisible, setSideBarVisible] = useState(false);
   document.getElementsByTagName(
     "body"
   )[0].style.cssText = `color: ${colors[4]}; background-color: ${colors[0]}`;

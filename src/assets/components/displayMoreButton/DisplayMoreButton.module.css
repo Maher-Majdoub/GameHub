@@ -2,13 +2,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 20px 0;
 }
 .btn {
     position: relative;
     height: 40px;
     width: 90px;
-    /* color: var(--dark-text-color);
-    background-color: var(--dark-color-3); */
     border: none;
     cursor: pointer;
 }
