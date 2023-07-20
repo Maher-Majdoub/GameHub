@@ -44,11 +44,12 @@ const Game = ({
   colors,
 }: GameProps) => {
   const [hover, setHover] = useState(false);
-  const index = background_image.indexOf("media/") + 6;
-  background_image =
-    background_image.slice(0, index) +
-    "crop/600/400/" +
-    background_image.slice(index);
+  const index = background_image ? background_image.indexOf("media/") + 6 : -1;
+  background_image = background_image
+    ? background_image.slice(0, index) +
+      "crop/600/400/" +
+      background_image.slice(index)
+    : "";
   return (
     <div
       className={styles.cardContainer}
