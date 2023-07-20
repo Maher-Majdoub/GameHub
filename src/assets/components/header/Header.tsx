@@ -42,7 +42,7 @@ const Header = ({
         <input
           ref={inputField}
           name="search"
-          type="text"
+          type="search"
           placeholder="Search Game..."
           onChange={() => {
             onInputChange(inputField.current ? inputField.current.value : "");
