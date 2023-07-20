@@ -47,6 +47,7 @@ const GamesDisplayer = ({
         </select>
         <select
           ref={order}
+          id="orderFilter"
           name="orderBy"
           className={styles.filterSelect}
           style={{ color: colors[4], backgroundColor: colors[2] }}

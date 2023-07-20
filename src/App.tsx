@@ -88,6 +88,10 @@ function App() {
         onInputChange={(text) => (search = text)}
         onSearch={(text) => {
           page = 1;
+          document
+            .getElementById("orderFilter")
+            ?.setAttribute("value", "-relevance");
+          ordering = "-relevance";
           morePages = true;
           search = text;
           updateGames([], setGames, parent_platforms, ordering, genre, search);
